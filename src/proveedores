@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "10705c51-8d5d-412e-bfed-4e67e359096f",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29027861"
+	},
+	"item": [
+		{
+			"name": "Edit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"code\":\"54321\",\r\n    \"name\": \"iPhone 15 pro\",\r\n    \"amount\": \"10\",\r\n    \"base_value\": \"5000000\",\r\n    \"base_public\": \"5500000\",\r\n    \"supplier\": \"Apple\"\r\n  }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/edit_product",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"edit_product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"code\":\"54321\",\r\n    \"name\": \"iPhone 15\",\r\n    \"amount\": \"10\",\r\n    \"base_value\": \"5000000\",\r\n    \"base_public\": \"5500000\",\r\n    \"supplier\": \"Apple\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/register_product",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register_product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search_products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/search_products",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"search_products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search_products_costume",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/search_products_costume",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"search_products_costume"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "costume/search_product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"54321\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/costume/search_product",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"costume",
+						"search_product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

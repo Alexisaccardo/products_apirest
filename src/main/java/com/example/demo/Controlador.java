@@ -22,9 +22,10 @@ public class Controlador {
         String base_public = products.getBase_public();
         String supplier = products.getSupplier();
 
-        if (code.equals("") || code.length() < 0 || name.equals("") || name.length() < 0 ||
-                amount.equals("") || amount.length() < 0 || base_value.equals("") || base_value.length() < 0 ||
-                base_public.equals("") || base_public.length() < 0 || supplier.equals("") || supplier.length() < 0) {
+        if (code==null || code.equals("") || code.length() < 0 || name==null ||name.equals("") || name.length() < 0 ||
+                amount==null || amount.equals("") || amount.length() < 0 || base_value==null || base_value.equals("") ||
+                base_value.length() < 0 || base_public==null || base_public.equals("") || base_public.length() < 0 ||
+                supplier==null || supplier.equals("") || supplier.length() < 0){
 
             answer = "No se admiten campos vacios o nulos,";
             answer += " no se puedo registrar el producto";
@@ -92,9 +93,10 @@ public class Controlador {
         String base_public = products.getBase_public();
         String supplier = products.getSupplier();
 
-        if (code.equals("") || code.length() < 0 || name.equals("") || name.length() < 0 ||
-                amount.equals("") || amount.length() < 0 || base_value.equals("") || base_value.length() < 0 ||
-                base_public.equals("") || base_public.length() < 0 || supplier.equals("") || supplier.length() < 0) {
+        if (code==null || code.equals("") || code.length() < 0 || name==null ||name.equals("") || name.length() < 0 ||
+                amount==null || amount.equals("") || amount.length() < 0 || base_value==null || base_value.equals("") ||
+                base_value.length() < 0 || base_public==null || base_public.equals("") || base_public.length() < 0 ||
+                supplier==null || supplier.equals("") || supplier.length() < 0){
 
             answer = "No se admiten campos vacios o nulos,";
             answer += " no se puedo editar o actualizar el producto";
@@ -230,9 +232,9 @@ public class Controlador {
 
         String code = products.getCode();
 
-        if (products.getCode().equals("") || products.getCode().length()<0) {
+        if (products.getCode()==null || products.getCode().equals("") || products.getCode().length()<0) {
 
-            products.setCode("No se encuentra un producto registrado con el codigo ingresado");
+            products.setCode("No se encuentra un producto registrado con el codigo ingresado o los campos están vacios/nulos");
 
         }else {
 
